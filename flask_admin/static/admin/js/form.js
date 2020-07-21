@@ -357,7 +357,10 @@
                   timePicker: false,
                   showDropdowns: true,
                   singleDatePicker: true,
-                  format: $el.attr('data-date-format')
+                  locale:{
+                      format: $el.attr('data-date-format')
+                  }, 
+                  autoUpdateInput: false
                 },
                 function(start, end) {
                     $('.filter-val').trigger("change");
@@ -368,7 +371,10 @@
                   timePicker: false,
                   showDropdowns: true,
                   separator: ' to ',
-                  format: $el.attr('data-date-format')
+                  locale:{
+                      format: $el.attr('data-date-format')
+                  }, 
+                  autoUpdateInput: false
                 },
                 function(start, end) {
                     $('.filter-val').trigger("change");
@@ -381,7 +387,10 @@
                   singleDatePicker: true,
                   timePickerIncrement: 1,
                   timePicker12Hour: false,
-                  format: $el.attr('data-date-format')
+                  locale:{
+                      format: $el.attr('data-date-format')
+                  }, 
+                  autoUpdateInput: false
                 },
                 function(start, end) {
                     $('.filter-val').trigger("change");
@@ -401,7 +410,10 @@
                   timePickerIncrement: 1,
                   timePicker12Hour: false,
                   separator: ' to ',
-                  format: $el.attr('data-date-format')
+                  locale:{
+                      format: $el.attr('data-date-format')
+                  }, 
+                  autoUpdateInput: false
                 },
                 function(start, end) {
                     $('.filter-val').trigger("change");
@@ -412,7 +424,10 @@
                   // Bootstrap 2 option
                   timePicker: true,
                   showDropdowns: true,
-                  format: $el.attr('data-date-format'),
+                  locale:{
+                      format: $el.attr('data-date-format')
+                  }, 
+                  autoUpdateInput: false,
                   timePicker12Hour: false,
                   timePickerIncrement: 1,
                   singleDatePicker: true
@@ -432,7 +447,9 @@
                   // Bootstrap 2 option
                   timePicker: true,
                   showDropdowns: true,
-                  format: $el.attr('data-date-format'),
+                  locale:{
+                      format: $el.attr('data-date-format')
+                  },
                   timePicker12Hour: false,
                   separator: ' to ',
                   timePickerIncrement: 1
