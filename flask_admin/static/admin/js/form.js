@@ -152,8 +152,8 @@
             map.fitBounds(bounds);
           }
         } else {
-          // use the default map center
-          map.setView([window.DEFAULT_CENTER_LAT, window.DEFAULT_CENTER_LONG], 12);
+          // use the default map center and a specified zoom (else 12)
+          map.setView([window.DEFAULT_CENTER_LAT, window.DEFAULT_CENTER_LONG], $el.data("zoom") || 12);
         }
 
         // set up tiles
